@@ -1,0 +1,367 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="aforalux.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link rel="shortcut icon" href="/assets/images/logo/favourite_icon_1.png">
+
+    <!-- fraimwork - css include -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+
+    <!-- icon font - css include -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome.css">
+
+    <!-- animation - css include -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/animate.css">
+
+    <!-- carousel - css include -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/slick-theme.css">
+
+    <!-- popup - css include -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/magnific-popup.css">
+
+    <!-- jquery-ui - css include -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/jquery-ui.css">
+
+    <!-- select option - css include -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/nice-select.css">
+
+    <!-- custom - css include -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+    <!-- custom - mycss include -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/myStyle.css">
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+                <div class="body_wrap">
+          <!-- backtotop - start -->
+          <div class="backtotop">
+              <a href="#" class="scroll">
+                  <i class="far fa-arrow-up"></i>
+              </a>
+          </div>
+          <!-- backtotop - end -->
+          <!-- preloader - start -->
+          <!-- <div id="preloader"></div> -->
+          <!-- preloader - end -->
+          <!-- header_section - start
+    ================================================== -->
+          
+
+          <header class="header_section header_6">
+              <div class="container-fluid">
+                  <div class="row align-items-center">
+                      <div class="col col-lg-5">
+                          <ul class="header_icons_list ul_li">
+                              <li>
+                                  <a href="/cgi-bin/register_login.aspx"><i class="fas fa-user"></i> Login</a>
+                              </li>
+
+                              <li><a href="/cgi-bin/collection.aspx"><i class="fas fa-shopping-cart"></i> Shop</a></li>
+                              <li>
+                                  <a href="/cgi-bin/products.aspx"><i class="fas fa-percent"></i> Sale</a>
+                              </li>
+                              
+                          </ul>
+                      </div>
+
+                      <div class="col col-lg-3 col-5">
+                          <div class="brand_logo text-center">
+                              <a class="brand_link" href="/Default.aspx">
+                                  <img src="/assets/images/logo/logo1_1x.png" srcset="/assets/images/logo/logo1_2x.png 2x" alt="logo_not_found">
+                              </a>
+                          </div>
+                      </div>
+
+                      <div class="col col-lg-4 col-7">
+                          <div class="btns_wrap">
+                              <ul class="header_icons_group2 ul_li">
+                                  <li>
+                                      <button type="button" class="main_search_btn" data-bs-toggle="collapse" data-bs-target="#main_search_collapse" aria-expanded="false" aria-controls="main_search_collapse">
+                                          <i class="search_icon far fa-search"></i>
+                                          <i class="search_close fal fa-times"></i>
+                                      </button>
+                                  </li>
+                                  <%--<li>
+                                      <button type="button" class="wishlist_btn">
+                                          <a href="/cgi-bin/wishlist.aspx">
+                                              <i class="far fa-heart"></i>
+                                              <small class="cart_counter">2</small>
+                                              </a>
+                                      </button>
+                                  </li>--%>
+                                  <li>
+                                      <button type="button" class="cart_btn">
+                                          <i class="far fa-shopping-bag"></i>
+                                          <small class="cart_counter">2</small>
+                                      </button>
+                                  </li>
+                                  <li></li>
+                              </ul>
+
+                              <!--<button type="button" class="offcanvas_btn"><i class="far fa-bars"></i></button>-->
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- collapse search - start -->
+              <div class="main_search_collapse collapse" id="main_search_collapse">
+                  <div class="main_search_form card">
+                      <div class="container width_tablet">
+                          <form action="#">
+                              <div class="form_item">
+                                  <input type="search" name="search" placeholder="Search here...">
+                                  <button type="submit" class="submit_btn"><i class="fal fa-search"></i></button>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+              <!-- collapse search - end -->
+          </header>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+                       <%--<footer class="footer_section footer_style_7">
+              <div class="fooetr_widget_area">
+                  <div class="container">
+                      <div class="row justify-content-lg-between">
+                          <div class="col col-lg-3">
+                              <div class="footer_widget footer_about">
+                                  <div class="brand_logo">
+                                      <a class="brand_link" href="/">
+                                          <img src="/assets/images/logo/logo1_1x.png" srcset="/assets/images/logo/logo1_2x.png 2x" alt="logo_not_found">
+                                      </a>
+                                  </div>
+                                  <ul class="footer_contact_info ul_li_block">
+                                      <li>
+                                          <p class="mb-0"><strong>Address:</strong> CONRAD BUSINESS TOWER, SHEIKH ZAYED ROAD, DUBAI - UAE</p>
+                                      </li>
+                                      <li>
+                                          <p class="mb-0"><strong>Phone:</strong> +56 110 3159</p>
+                                      </li>
+                                      <li>
+                                          <p class="mb-0"><strong>Email:</strong> <a href="#!"><u>info@anabiya1.com</u></a></p>
+                                      </li>
+                                  </ul>
+                                  <ul class="social_round ul_li">
+                                      <li><a class="bg_tumblr" href="#!"><i class="fab fa-tumblr"></i></a></li>
+                                      <li><a class="bg_facebook" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                                      <li><a class="bg_twitter" href="#!"><i class="fab fa-twitter"></i></a></li>
+                                      <li><a class="bg_youtube" href="#!"><i class="fab fa-youtube"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+
+                          <div class="col col-lg-8">
+                              <div class="footer_instagram2">
+                                  <div class="title_wrap">
+                                      <h3 class="title_text"><i class="fab fa-instagram"></i> @Instagram</h3>
+                                      <a class="viewall_btn" href="#!">View All</a>
+                                  </div>
+                                  <ul class="ul_li zoom-gallery">
+                                      <li>
+                                          <a class="popup_image" href="/assets/images/instagram/insta_20.jpg">
+                                              <img src="/assets/images/instagram/insta_20.jpg" alt="image_not_found">
+                                              <i class="fab fa-instagram"></i>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a class="popup_image" href="/assets/images/instagram/insta_21.jpg">
+                                              <img src="/assets/images/instagram/insta_21.jpg" alt="image_not_found">
+                                              <i class="fab fa-instagram"></i>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a class="popup_image" href="/assets/images/instagram/insta_22.jpg">
+                                              <img src="/assets/images/instagram/insta_22.jpg" alt="image_not_found">
+                                              <i class="fab fa-instagram"></i>
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="footer_bottom">
+                  <div class="container">
+                      <p class="copyright_text text-center">
+                          ANABIYA ©COPYRIGHT 2022. DEVELOPED BY ZAAR TECH
+                      </p>
+                  </div>
+              </div>
+          </footer>--%>
+          <!-- footer_section - end
+    ================================================== -->
+
+
+
+
+                    <!-- footer_section - start
+      ================================================== -->
+      <footer class="footer_section footer_style_4">
+          <div style="background-color:#dadada;height:10px;"></div>
+          <div class="fooetr_widget_area">
+
+              <div class="container width_tablet">
+                  <div class="row justify-content-lg-between">
+                      <div class="col col-lg-3 col-md-6 col-sm-8">
+                          <div class="fooetr_widget footer_about">
+                              <div class="brand_logo">
+                                  <a class="brand_link" href="/Default.aspx">
+                                      <img src="/assets/images/logo/logo1_1x.png" srcset="/assets/images/logo/logo1_2x.png 2x" alt="logo_not_found" style="height:100px!important;">
+                                  </a>
+                              </div>
+                              <p>
+                                  Bushwick blue bottle photo booth copper mug marfa craft beer pour-over swag subway
+                              </p> 
+                              <div class="mb-2">
+                                  <a href="#!" class="text-black"><i class="fa fa-envelope"></i> info@aforalux.com</a>
+                              </div>
+                              <div class="footer_social">
+                                  <h3 class="social_title">FOLLOW US ON</h3>
+                                
+                                  <ul class="social_border ul_li">
+                                      <li><a href="#!"><i class="fab fa-facebook-square"></i></a></li>
+                                      <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
+                                      <li><a href="#!"><i class="fab fa-youtube"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col col-lg-6">
+                          <div class="row">
+                              <div class="col col-md-4 col-sm-4">
+                                  <div class="fooetr_widget fooetr_useful_links">
+                                      <h3 class="footer_widget_title">Top Categories</h3>
+                                      <ul class="ul_li_block">
+                                          <li><a href="#!">Bedding</a></li>
+                                          <li><a href="#!">Bath</a></li>
+                                          <li><a href="#!">Decor</a></li>
+                                          <li><a href="#!">Dinning</a></li>
+                                          <li><a href="#!">Kids</a></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="col col-md-4 col-sm-4">
+                                  <div class="fooetr_widget fooetr_useful_links">
+                                      <h3 class="footer_widget_title">Customer Care</h3>
+                                      <ul class="ul_li_block">
+                                          <li><a href="#!">Contact us</a></li>
+                                          <li><a href="#!">Privacy Policy</a></li>
+                                          <li><a href="#!">Reviews</a></li>
+                                          <li><a href="#!">My Account</a></li>
+                                          
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="col col-md-4 col-sm-4">
+                                  <div class="fooetr_widget fooetr_useful_links">
+                                      <h3 class="footer_widget_title">Help & Info</h3>
+                                      <ul class="ul_li_block">
+                                          <li><a href="#!">Our Story</a></li>
+                                          <li><a href="#!">Terms & Condition</a></li>
+                                          <li><a href="#!">Our Mission</a></li>
+                                          <li><a href="#!">Inter Partners</a></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col col-lg-3 col-md-6 col-sm-8">
+                          <div class="fooetr_widget fooetr_newsletter_3">
+                              <h3 class="footer_widget_title">Safe Payment on</h3>
+                              <div class="payment_method">
+                                  <img src="/assets/images/payment_2.png" alt="image_not_found">
+                              </div>
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="footer_bottom">
+              <div class="container width_tablet">
+                  <p class="copyright_text text-center">
+                      ©2022 <a href="/Default.aspx">ZAARTECH</a> ® All Rights Reserved.
+                  </p>
+              </div>
+          </div>
+      </footer>
+      <!-- footer_section - end
+      ================================================== -->
+
+
+      </div>
+
+
+
+        </div>
+        <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/bootstrap5-dropdown-ml-hack.js"></script>
+
+    <!-- animation - jquery include -->
+    <script src="/assets/js/wow.min.js"></script>
+
+    <!-- carousel - jquery include -->
+    <script src="/assets/js/slick.min.js"></script>
+
+    <!-- popup - jquery include -->
+    <script src="/assets/js/magnific-popup.min.js"></script>
+
+    <!-- google map - jquery include -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2HrmqE4sWSei0XdKGbOMOHN3Mm2Bf-M&ver=2.1.6"></script>
+    <script src="/assets/js/gmaps.min.js"></script>
+
+    <!-- jquery-ui - jquery include -->
+    <script src="/assets/js/jquery-ui.js"></script>
+
+    <!-- off canvas sidebar - jquery include -->
+    <script src="/assets/js/mCustomScrollbar.js"></script>
+
+    <!-- bg parallax - jquery include -->
+    <script src="/assets/js/parallax.min.js"></script>
+
+    <!-- select option - jquery include -->
+    <script src="/assets/js/nice-select.min.js"></script>
+
+    <!-- isotope filter - jquery include -->
+    <script src="/assets/js/isotope.pkgd.min.js"></script>
+    <script src="/assets/js/masonry.pkgd.min.js"></script>
+    <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
+
+    <!-- countdown timer - jquery include -->
+    <script src="/assets/js/countdown.js"></script>
+
+    <!-- chart - jquery include -->
+    <script src="/assets/js/chart.js"></script>
+
+    <!-- custom - jquery include -->
+    <script src="/assets/js/main.js"></script>
+    </form>
+</body>
+</html>
