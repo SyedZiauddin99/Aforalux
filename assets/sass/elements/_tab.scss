@@ -1,0 +1,232 @@
+/* tab nav style - start
+================================================== */
+
+/* product tab nav 1 - start */
+.product_tabnav_1 {
+  >li {
+    padding-bottom: 13px;
+    border-bottom: 1px solid #000000;
+    &:not(:last-child) {
+      button {
+        margin-right: 40px;
+      }
+    }
+  }
+
+  button {
+    color: #c8c8c8;
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    &:hover,
+    &.active {
+      color: #1f1e1e;
+    }
+  }
+}
+/* product tab nav 1 - end */
+
+/* product tab nav 2 - start */
+.product_tabnav_2 {
+  margin-bottom: 23px;
+
+  >li {
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 18px;
+      padding-right: 18px;
+    }
+    &:after {
+      top: 50%;
+      width: 4px;
+      height: 2px;
+      content: '';
+      right: -2px;
+      position: absolute;
+      transform: translateY(-50%);
+      background-color: $default_black;
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  button {
+    font-size: 18px;
+    position: relative;
+    color: $default_black;
+    &:before {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      content: '';
+      height: 3px;
+      position: absolute;
+      background-color: #ff0000;
+      transition: $default_transition;
+    }
+    &:hover,
+    &.active {
+      color: #ff0000;
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+}
+/* product tab nav 2 - end */
+
+/* product tab nav 3 - start */
+.product_tabnav_3 {
+  z-index: 1;
+  position: relative;
+  >li {
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 18px;
+      padding-right: 18px;
+    }
+    &:after {
+      top: 50%;
+      width: 4px;
+      height: 2px;
+      content: '';
+      right: -2px;
+      position: absolute;
+      transform: translateY(-50%);
+      background-color: $default_black;
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  button {
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    color: $default_black;
+    &:before {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      content: '';
+      height: 3px;
+      position: absolute;
+      transition: $default_transition;
+      background-color: $default_black;
+    }
+    &:hover,
+    &.active {
+      color: $default_black;
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+}
+/* product tab nav 3 - end */
+
+/* product tab nav 4 - start */
+.product_tabnav_4 {
+  margin-bottom: 45px;
+  >li {
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 35px;
+      padding-right: 35px;
+    }
+    &:after {
+      top: 50%;
+      width: 4px;
+      height: 2px;
+      content: '';
+      right: -2px;
+      position: absolute;
+      transform: translateY(-50%);
+      background-color: $default_black;
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  button {
+    color: #a0a0a0;
+    display: block;
+    font-size: 27px;
+    &:hover,
+    &.active {
+      color: $default_black;
+    }
+  }
+}
+/* product tab nav 4 - end */
+
+/* product tab nav 5 - start */
+.product_tabnav_5 {
+  margin-bottom: 40px;
+  >li {
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  button {
+    padding: 10px;
+    color: #7f7f7f;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    &:before {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      content: '';
+      height: 3px;
+      position: absolute;
+      transition: $default_transition;
+      background-color: $default_black;
+    }
+    &:hover,
+    &.active {
+      color: $default_black;
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+}
+/* product tab nav 5 - end */
+
+/* product tab nav 6 - start */
+.product_tabnav_6 {
+  >li {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+  button {
+    color: #a4a4a4;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    &:hover,
+    &.active {
+      color: $default_black;
+    }
+  }
+}
+/* product tab nav 6 - end */
+
+/* tab nav style - end
+================================================== */

@@ -1,0 +1,173 @@
+/* coming soon - satrt
+================================================== */
+.comingsoon_section {
+	z-index: 1;
+	display: flex;
+	padding: 120px 0;
+	min-height: 100vh;
+	position: relative;
+	align-items: center;
+	@include bg_image_property;
+	.overlay {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.74);
+	}
+}
+
+.comingsoon_style_1 {
+
+	.brand_logo {
+		margin-bottom: 25px;
+	}
+
+	h1 {
+		color: #ffffff;
+		font-size: 25px;
+		font-weight: 700;
+		margin-bottom: 60px;
+		letter-spacing: 7px;
+		text-transform: uppercase;
+	}
+
+	.countdown_timer {
+		margin: 0 0 30px;
+		>li {
+			z-index: 1;
+			width: 155px;
+			height: 155px;
+			padding: 37px 0;
+			margin: 0 0 30px;
+			position: relative;
+			border-radius: 100%;
+			justify-content: center;
+			border: 5px solid #ffffff;
+			&:not(:last-child) {
+				margin-right: 8px;
+			}
+			&:after {
+				display: none;
+			}
+			&:before {
+				top: 10px;
+				left: 10px;
+				right: 10px;
+				bottom: 10px;
+				content: '';
+				z-index: -1;
+				position: absolute;
+				border-radius: 100%;
+				background-color: $default_orange;
+			}
+		}
+		strong,span {
+			color: #ffffff;
+			display: block;
+			font-weight: 700;
+		}
+		span {
+			font-size: 12px;
+		}
+		strong {
+			font-size: 50px;
+			margin-bottom: 5px;
+		}
+	}
+
+	h2 {
+		color: #ffffff;
+		line-height: 1;
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+
+	.form_item {
+		margin: auto;
+		max-width: 466px;
+		.btn {
+			top: 50%;
+			right: 0;
+			position: absolute;
+			transform: translateY(-50%);
+		}
+	}
+}
+
+.comingsoon_style_2 {
+	padding-top: 200px;
+	align-items: flex-end;
+	h1 {
+		line-height: 1;
+		color: #ffffff;
+		font-size: 70px;
+		font-weight: 800;
+		margin-bottom: 15px;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 500;
+		margin-bottom: 40px;
+	}
+
+	.form_item {
+		margin-bottom: 20px;
+		input {
+			border: none;
+			height: 66px;
+			border-radius: 6px;
+		}
+		button {
+			top: 50%;
+			right: 5px;
+			width: 56px;
+			height: 56px;
+			color: #ffffff;
+			border-radius: 6px;
+			position: absolute;
+			transform: translateY(-50%);
+			background-color: $default_orange;
+		}
+	}
+
+	.countdown_timer {
+		margin: 0;
+		padding-top: 30px;
+		>li {
+			z-index: 1;
+			width: 155px;
+			height: 155px;
+			padding: 37px 0;
+			margin: 0 0 30px;
+			position: relative;
+			border-radius: 100%;
+			justify-content: center;
+			border: 2px solid rgba(255, 255, 255, 0.2);
+			&:not(:last-child) {
+				margin-right: 14px;
+			}
+			&:after {
+				display: none;
+			}
+		}
+		strong,span {
+			color: #ffffff;
+			display: block;
+			font-weight: 700;
+		}
+		span {
+			font-size: 12px;
+		}
+		strong {
+			font-size: 50px;
+			margin-bottom: 5px;
+		}
+	}
+}
+/* coming soon - end
+================================================== */

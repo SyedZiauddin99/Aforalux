@@ -1,0 +1,63 @@
+/* order & unorder list reset - start
+================================================== */
+.post_meta {
+  color: #a8aaab;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 800;
+  li {
+    margin-bottom: 15px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  a {
+    color: #7b7d7f;
+    display: block;
+    &:hover {
+      color: $default_orange;
+    }
+  }
+  i {
+    margin-right: 3px;
+    color: $default_orange;
+  }
+}
+
+.post_meta_2 {
+  color: #b7b7b7;
+  line-height: 1;
+  font-size: 14px;
+  li {
+    position: relative;
+    &:first-child {
+      a {
+        color: $default_orange;
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 13px;
+      padding-right: 13px;
+    }
+    &:after {
+      top: 50%;
+      right: -3px;
+      content: '/';
+      position: absolute;
+      transform: translateY(-50%);
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  a {
+    color: #b7b7b7;
+    &:hover {
+      color: $default_orange;
+    }
+  }
+}
+/* order & unorder list reset - end
+================================================== */

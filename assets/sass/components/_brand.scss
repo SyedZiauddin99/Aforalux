@@ -1,0 +1,32 @@
+/* brand - start
+================================================== */
+.brand_carousel {
+	.slider_item {
+		padding: 0 15px;
+	}
+
+	&.has_border {
+		border-top: 1px solid #dedede;
+		border-bottom: 1px solid #dedede;
+		.slider_item {
+			padding: 0 15px;
+			border-right: 1px solid #dedede;
+		}
+		.brand_item {
+			height: 255px;
+		}
+	}
+}
+
+.brand_item {
+	height: 85px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img {
+		max-height: 75px;
+		max-width: 190px;
+	}
+}
+/* brand - end
+================================================== */

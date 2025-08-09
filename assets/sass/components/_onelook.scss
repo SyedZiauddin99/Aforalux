@@ -1,0 +1,77 @@
+/* onelook section - start
+================================================== */
+.onelook_section {
+	padding: 70px 55px 40px;
+	background-color: #e8e8e8;
+}
+
+.onelook_item1 {
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 30px;
+	transition: $default_transition;
+	border-bottom: 4px solid transparent;
+
+	.slider_item {
+		overflow: hidden;
+		position: relative;
+	}
+
+	.slick-dots {
+		display: flex;
+		padding: 0 26px 18px 0;
+		justify-content: flex-end;
+	}
+
+	img {
+		width: 100%;
+		display: block;
+		transition: $default_transition;
+	}
+
+	&.small_style {
+		display: flex;
+		min-height: 267px;
+		img {
+			object-fit: cover;
+		}
+	}
+
+	.title_wrap,
+	.btn_2 {
+		z-index: 1;
+		left: 45px;
+		position: absolute;
+	}
+
+	.title_wrap {
+		top: 35px;
+	}
+
+	.btn_2 {
+		bottom: 40px;
+	}
+
+	.item_title {
+		color: #1f1e1e;
+		line-height: 1;
+		font-size: 40px;
+		font-weight: 800;
+		margin-bottom: 8px;
+	}
+	p {
+		line-height: 1;
+		font-size: 18px;
+		font-weight: 300;
+		margin-bottom: 0;
+	}
+
+	&:hover {
+		border-color: $default_orange;
+		img {
+			transform: scale(1.08);
+		}
+	}
+}
+/* onelook section - end
+================================================== */

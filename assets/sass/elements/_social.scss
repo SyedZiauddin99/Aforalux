@@ -1,0 +1,134 @@
+/* social links - start
+================================================== */
+.fixed_social_links {
+  left: -65px;
+  bottom: 200px;
+  z-index: 990;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  transform: rotate(-90deg);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+  .social_title {
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 0;
+    align-items: center;
+    &:after {
+      content: '';
+      width: 90px;
+      height: 2px;
+      margin: 0 20px;
+      display: inline-block;
+      background-color: $default_black;
+      box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .social_primary {
+    >li {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+    a {
+      font-size: 20px;
+    }
+  }
+
+  &.text-white {
+    .social_title {
+      color: #ffffff;
+      &:after {
+        background-color: #ffffff;
+      }
+    }
+    .social_primary {
+      a {
+        color: #ffffff;
+        &:hover {
+          color: $default_orange;
+        }
+      }
+    }
+  }
+}
+
+.social_primary {
+  li {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  a {
+    font-size: 13px;
+    color: $default_color;
+    &:hover {
+      color: $default_orange;
+    }
+  }
+}
+
+.social_round {
+  margin: -2px;
+  >li {
+    padding: 2px;
+  }
+  a {
+    width: 47px;
+    height: 47px;
+    display: flex;
+    color: #1c1f23;
+    font-size: 14px;
+    align-items: center;
+    border-radius: 100%;
+    justify-content: center;
+    background-color: #e8e8e8;
+    &:hover {
+      color: #ffffff;
+      background-color: $default_orange;
+    }
+
+    &.bg_tumblr {
+      background-color: #35465d;
+    }
+    &.bg_facebook {
+      background-color: #3b5998;
+    }
+    &.bg_twitter {
+      background-color: #1da1f2;
+    }
+    &.bg_youtube {
+      background-color: #ff0000;
+    }
+    &.bg_google {
+      background-color: #ea4335;
+    }
+  }
+}
+
+.social_border {
+  margin: -2px;
+  >li {
+    padding: 2px;
+  }
+  a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    border-radius: 100%;
+    color: $default_black;
+    justify-content: center;
+    border: 2px solid $default_black;
+    &:hover {
+      color: #ffffff;
+      border-color: $default_orange;
+      background-color: $default_orange;
+    }
+  }
+}
+/* social links - end
+================================================== */

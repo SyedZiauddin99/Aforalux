@@ -1,0 +1,40 @@
+/* countdown - start
+================================================== */
+.countdown_timer {
+	margin: -15px;
+	>li {
+		padding: 15px;
+		min-width: 130px;
+		position: relative;
+		&:after {
+			top: 25px;
+			right: -2px;
+			content: ':';
+			color: #808182;
+			font-size: 17px;
+			position: absolute;
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+	strong, span {
+		display: block;
+		line-height: 1;
+	}
+	strong {
+		color: #1e1e1e;
+		font-size: 55px;
+		font-weight: 600;
+		margin-bottom: 14px;
+	}
+	span {
+		color: #717171;
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+}
+/* countdown - end
+================================================== */

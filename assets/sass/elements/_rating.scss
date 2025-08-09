@@ -1,0 +1,26 @@
+/* rating star - start
+================================================== */
+.rating_star {
+	li {
+		color: #a0a0a0;
+		font-size: 12px;
+		&:not(:last-child) {
+			margin-right: 1px;
+		}
+		&.active {
+			color: #f3b833;
+		}
+	}
+}
+
+.rating_wrap {
+	display: flex;
+	align-items: center;
+	.shop_review_text {
+		color: #343434;
+		font-size: 12px;
+		margin-left: 7px;
+	}
+}
+/* rating star - end
+================================================== */

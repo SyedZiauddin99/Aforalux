@@ -1,0 +1,43 @@
+/* my account - start
+================================================== */
+
+/* dashboard nav - start */
+.dashboard_nav {
+	margin: -2px -2px 58px -2px;
+	li {
+		padding: 2px;
+		&:hover,
+		&.active {
+			a {
+				color: #333333;
+				background-color: #e6e6e6;
+			}
+		}
+	}
+	a {
+		color: #808080;
+		font-size: 20px;
+		padding: 11px 25px;
+		align-items: center;
+		border-radius: 45px;
+		display: inline-flex;
+		justify-content: center;
+		font-family: 'Poppins', sans-serif;
+	}
+	span {
+		height: 24px;
+		color: #ffffff;
+		min-width: 24px;
+		font-size: 12px;
+		margin-left: 20px;
+		line-height: 24px;
+		text-align: center;
+		border-radius: 45px;
+		display: inline-block;
+		background-color: $default_orange;
+	}
+}
+/* dashboard nav - end */
+
+/* my account - end
+================================================== */

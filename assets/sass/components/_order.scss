@@ -1,0 +1,143 @@
+/* order - start
+================================================== */
+.order_status_section {
+	@include bg_image_property;
+}
+
+.order_number {
+	margin-bottom: 30px;
+	span {
+		color: #000000;
+		line-height: 1;
+		font-size: 23px;
+		font-weight: 600;
+		padding: 21px 40px;
+		border-radius: 45px;
+		display: inline-block;
+		background-color: #f0efee;
+	}
+}
+
+.order_status_list {
+	ul {
+		z-index: 1;
+		position: relative;
+		border-radius: 45px;
+		background-color: #f0efee;
+		&:not(:last-child) {
+			margin-bottom: 4px;
+		}
+		&:after {
+			top: 2px;
+			right: 0;
+			width: 50%;
+			right: 2px;
+			bottom: 2px;
+			content: '';
+			z-index: -1;
+			position: absolute;
+			border-radius: 45px;
+			background-color: #ffffff;
+		}
+	}
+	li {
+		width: 50%;
+		padding: 16px 40px;
+	}
+}
+
+.tracking_map {
+	#mapBox {
+		margin: 60px 0 0;
+		min-height: 450px;
+		border-radius: 6px;
+		border: 4px solid #ffffff;
+		box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.31);
+	}
+}
+
+.order_status_tebnav {
+	margin: -10px;
+	>li {
+		padding: 10px;
+	}
+	button {
+		color: #000000;
+		display: block;
+		font-size: 18px;
+		font-weight: 700;
+		padding: 19px 45px;
+		border-radius: 45px;
+		background-color: #ffffff;
+		&:hover,
+		&.active {
+			color: #ffffff;
+			background-color: $default_orange;
+		}
+	}
+}
+
+.order_status_table {
+	padding-top: 35px;
+	table {
+		margin: 0;
+	}
+	th, td {
+		border: none;
+		padding: 14px 45px;
+	}
+	thead {
+		color: #ffffff;
+		background-color: #353534;
+	}
+	th {
+		font-size: 24px;
+		font-weight: 600;
+	}
+	tbody {
+		background-color: #ffffff;
+	}
+}
+
+.order_tracking_section {
+	h2 {
+		font-size: 66px;
+		font-weight: 800;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 18px;
+		margin-bottom: 30px;
+		font-family: 'Roboto', sans-serif;
+	}
+	.form_item {
+		border-radius: 45px;
+		padding-left: 200px;
+		background-color: #2b2d2e;
+		input {
+			border: none;
+			padding: 0 40px;
+			background-color: #eaeaea;
+			transform: translateX(1px);
+		}
+		.input_title {
+			left: 0;
+			top: 20px;
+			color: #ffffff;
+			font-size: 18px;
+			font-weight: 700;
+			max-width: 200px;
+			margin-bottom: 0;
+			position: absolute;
+			padding-left: 30px;
+			text-transform: uppercase;
+		}
+	}
+	.btn {
+		width: 100%;
+		display: block;
+	}
+}
+/* order - end
+================================================== */

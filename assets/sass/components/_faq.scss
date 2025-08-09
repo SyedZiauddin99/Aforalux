@@ -1,0 +1,233 @@
+/* faq page - start
+================================================== */
+
+/* faq section - start */
+.faq_section {
+	&.bg_black {
+		background-color: #1d1d1d;
+	}
+	&.bg_gray {
+		background-color: #f1f1f1;
+	}
+}
+
+.faq_title {
+	line-height: 1;
+	font-size: 39px;
+	margin-bottom: 80px;
+	span {
+		line-height: 1;
+		display: block;
+		padding-top: 15px;
+		font-size: initial;
+		img {
+			max-width: 50px;
+		}
+	}
+}
+/* faq section - end */
+
+/* accordion primary - start */
+.accordion_primary {
+	margin-top: -20px;
+	.accordion-item {
+		border: none;
+		border-radius: 0;
+		border-bottom: 1px solid #e6e6e6;
+	}
+	button {
+		width: 100%;
+		padding: 20px;
+		color: #2e2e2e;
+		display: block;
+		font-size: 18px;
+		font-weight: 800;
+		text-align: left;
+		position: relative;
+		&:before {
+			color: #0099f7;
+			content: '\f067';
+			font-weight: 400;
+			margin-right: 15px;
+			display: inline-block;
+			transition: $default_transition;
+			font-family: 'Font Awesome 5 Pro';
+		}
+		&[aria-expanded=true] {
+			&:before {
+				content: '\f068';
+				transform: rotate(360deg);
+			}
+		}
+	}
+	.accordion-body {
+		padding: 0 25px 25px 55px;
+	}
+	p {
+		color: #686c6e;
+		font-size: 16px;
+		margin-bottom: 0;
+		font-family: 'Roboto', sans-serif;
+	}
+}
+/* accordion primary - end */
+
+/* accordion boxed - start */
+.accordion_boxed {
+	.accordion-item {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+	button {
+		width: 100%;
+		display: block;
+		color: #ffffff;
+		font-size: 17px;
+		font-weight: 800;
+		text-align: left;
+		padding: 30px 40px;
+		border-radius: 15px;
+		background-color: rgba(255, 255, 255, 0.2);
+		&:after {
+			float: right;
+			color: #ffffff;
+			content: '\f067';
+			font-weight: 400;
+			display: inline-block;
+			transition: $default_transition;
+			font-family: 'Font Awesome 5 Pro';
+		}
+		&[aria-expanded=true] {
+			color: $default_black;
+			background-color: #ffffff;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+			&:after {
+				content: '\f068';
+				color: $default_black;
+				transform: rotate(360deg);
+			}
+		}
+	}
+
+	.accordion-body {
+		padding: 30px 40px;
+		background-color: #ffffff;
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+	}
+	p {
+		color: #686c6e;
+		font-size: 16px;
+		margin-bottom: 0;
+		font-family: 'Roboto', sans-serif;
+	}
+}
+/* accordion boxed - end */
+
+/* accordion boxed 2 - start */
+.accordion_boxed2 {
+	.accordion-item {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+	button {
+		width: 100%;
+		display: block;
+		font-size: 17px;
+		font-weight: 800;
+		text-align: left;
+		padding: 30px 40px;
+		border-radius: 15px;
+		color: $default_black;
+		border: 1px solid #cccccc;
+		&:after {
+			float: right;
+			content: '\f107';
+			font-weight: 700;
+			display: inline-block;
+			transition: $default_transition;
+			font-family: 'Font Awesome 5 Pro';
+		}
+		&[aria-expanded=true] {
+			border-color: #ffffff;
+			background-color: #ffffff;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+			box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
+			&:after {
+				content: '\f057';
+				transform: rotate(360deg);
+			}
+		}
+	}
+
+	.accordion-body {
+		padding: 30px 40px;
+		background-color: #ffffff;
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+		box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
+	}
+	p {
+		color: #686c6e;
+		font-size: 16px;
+		margin-bottom: 0;
+		font-family: 'Roboto', sans-serif;
+	}
+}
+/* accordion boxed 2 - end */
+
+/* accordion border - start */
+.accordion_border {
+	.accordion-item {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+	button {
+		width: 100%;
+		display: block;
+		font-size: 17px;
+		font-weight: 800;
+		text-align: left;
+		border-radius: 45px;
+		color: $default_black;
+		border: 1px solid #cccccc;
+		padding: 10px 25px 10px 40px;
+		&:after {
+			float: right;
+			content: '\f055';
+			font-weight: 700;
+			display: inline-block;
+			transition: $default_transition;
+			font-family: 'Font Awesome 5 Pro';
+		}
+		&[aria-expanded=true] {
+			color: #ffffff;
+			border-color: #0099f7;
+			background-color: #0099f7;
+			box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
+			&:after {
+				content: '\f056';
+				transform: rotate(360deg);
+			}
+		}
+	}
+
+	.accordion-body {
+		padding: 20px 40px;
+	}
+	p {
+		color: #686c6e;
+		font-size: 16px;
+		margin-bottom: 0;
+		font-family: 'Roboto', sans-serif;
+	}
+}
+/* accordion border - end */
+
+/* faq page - end
+================================================== */

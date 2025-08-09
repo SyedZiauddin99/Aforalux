@@ -1,0 +1,139 @@
+/* testimonial - start
+================================================== */
+
+/* testimonial layout 1 (home 5) - start */
+.testimonial_layout_1 {
+	margin-top: 75px;
+	padding: 70px 70px 60px;
+	border: 2px solid #191919;
+	.testimonial_thumbnail {
+		width: 150px;
+		height: 150px;
+		overflow: hidden;
+		margin-top: -75px;
+		margin-bottom: 60px;
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+	h4 {
+		color: #151515;
+		line-height: 1;
+		font-size: 61px;
+		font-weight: 700;
+		margin-bottom: 0;
+	}
+	span {
+		color: #5a5a5a;
+		line-height: 1;
+		display: block;
+		font-size: 25px;
+		font-weight: 500;
+		margin-bottom: 25px;
+	}
+	p {
+		color: #1f1e1e;
+		font-size: 20px;
+		margin-bottom: 0;
+		font-family: 'Roboto', sans-serif;
+	}
+}
+/* testimonial layout 1 (home 5) - end */
+
+/* testimonial item simple (home 6) - start */
+.testimonial_item_simple {
+	padding: 0 20px;
+	p {
+		font-style: italic;
+		margin-bottom: 30px;
+		font-family: 'Roboto', sans-serif;
+	}
+	.thumbnail_wrap {
+		width: 100px;
+		height: 100px;
+		overflow: hidden;
+		border-radius: 100%;
+		display: inline-block;
+	}
+	.info_wrap {
+		color: #000000;
+		font-size: 15px;
+	}
+}
+
+.simple_testimonial_carousel {
+	.slick-dots {
+		position: static;
+		margin-top: 20px;
+	}
+}
+/* testimonial item simple (home 6) - end */
+
+/* testimonial layout 2 (home 8) - start */
+.testimonial_layout_2 {
+
+	.thumbnail_wrap {
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+		justify-content: flex-end;
+	}
+
+	.thumbnail {
+		width: 80px;
+		height: 80px;
+		overflow: hidden;
+		margin-right: 10px;
+		border-radius: 100%;
+	}
+
+	.quote_content {
+		text-align: center;
+		span {
+			display: block;
+			line-height: 1;
+		}
+	}
+
+	.quote_text {
+		color: #a8aaab;
+		font-size: 14px;
+		padding-top: 5px;
+		text-transform: uppercase;
+		font-family: 'Poppins', sans-serif;
+	}
+
+	p {
+		color: #1c1f23;
+		font-size: 24px;
+		font-style: italic;
+		margin-bottom: 25px;
+	}
+
+	.name_text {
+		color: #b67c5a;
+		font-size: 18px;
+		font-weight: 400;
+		margin-bottom: 0;
+		font-family: 'Anton', sans-serif;
+		span {
+			color: #a8aaab;
+			margin-left: 15px;
+			display: inline-block;
+		}
+	}
+}
+
+.testimonial_layout2_carousel {
+	.slick-dots {
+		display: flex;
+		position: static;
+		padding: 50px 15px 0;
+		justify-content: flex-end;
+	}
+}
+/* testimonial layout 2 (home 8) - end */
+
+/* testimonial - end
+================================================== */

@@ -1,0 +1,97 @@
+/* breadcrumb - start
+================================================== */
+
+/* breadcrumb section - start */
+.breadcrumb_section {
+	display: flex;
+	min-height: 680px;
+	position: relative;
+	padding: 120px 0px;
+	align-items: center;
+	@include bg_image_property;
+}
+.page_title {
+	line-height: 1;
+	font-size: 65px;
+	font-weight: 900;
+	margin-bottom: 30px;
+}
+.breadcrumb_nav {
+	li {
+		color: #737373;
+		font-size: 16px;
+		font-weight: 600;
+		position: relative;
+		&:first-child {
+			&:after {
+				background-color: $default_orange;
+			}
+			>a {
+				color: $default_orange;
+			}
+		}
+		&:not(:last-child) {
+			margin-right: 21px;
+			padding-right: 21px;
+		}
+		&:after {
+			top: 50%;
+			right: -2px;
+			content: '';
+			width: 4px;
+			height: 2px;
+			position: absolute;
+			background-color: #737373;
+			transform: translateY(-50%);
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+	a {
+		color: #737373;
+		&:hover {
+			color: $default_orange;
+		}
+	}
+
+	&.text-white {
+		li {
+			color: #ffffff;
+			&:after {
+				background-color: #ffffff;
+			}
+			&:first-child {
+				&:after {
+					background-color: $default_orange;
+				}
+			}
+		}
+		a {
+			color: #ffffff;
+			&:hover {
+				color: $default_orange;
+			}
+		}
+	}
+}
+.breadcrumb_content {
+	text-align: center;
+}
+/* breadcrumb section - end */
+
+/* breadcrumb section - start */
+.breadcrumb_2 {
+	padding: 100px 0;
+	min-height: 475px;
+	.page_title {
+		margin-bottom: 15px;
+		letter-spacing: -3px;
+	}
+}
+/* breadcrumb section - end */
+
+/* breadcrumb - end
+================================================== */

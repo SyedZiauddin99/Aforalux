@@ -1,0 +1,134 @@
+/* register pages - start
+================================================== */
+
+/* register section - start */
+.register_section {
+	&.bg_gray {
+		background-color: #f3f3f3;
+	}
+}
+/* register section - end */
+
+/* create account - start */
+.register_form_wrap {
+	margin: auto;
+	max-width: 800px;
+	border-radius: 5px;
+	padding: 90px 200px;
+	background-color: #ffffff;
+	h2 {
+		line-height: 1;
+		font-size: 39px;
+		font-weight: 800;
+		margin-bottom: 35px;
+		text-transform: uppercase;
+	}
+
+	.form_item {
+		input {
+			border: none;
+			height: 40px;
+			padding: 0 20px;
+			border-radius: 0;
+			border-bottom: 2px solid #d9d9d9;
+			&:focus {
+				border-color: $default_orange;
+			}
+		}
+	}
+
+	.checkbox_item {
+		margin-bottom: 50px;
+	}
+
+	.btn {
+		width: 100%;
+		display: block;
+		padding: 16px 40px;
+		margin-bottom: 40px;
+	}
+
+	p {
+		color: #686c6e;
+		font-size: 16px;
+		font-weight: 800;
+	}
+
+	.login_btn {
+		font-size: 18px;
+		font-weight: 800;
+		color: $default_black;
+		&:hover {
+			color: $default_orange;
+		}
+	}
+
+	.forget_password {
+		margin-bottom: 35px;
+		a {
+			color: #808080;
+			font-size: 14px;
+			font-weight: 600;
+			text-transform: uppercase;
+			&:hover {
+				color: $default_orange;
+			}
+		}
+	}
+
+	.login_with_social {
+		margin-bottom: 40px;
+	}
+}
+/* create account - end */
+
+/* forget password section - start */
+.forget_password_section {
+	@include bg_image_property;
+	.image_wrap {
+		margin: -60px;
+	}
+
+	h2 {
+		line-height: 1;
+		font-size: 48px;
+		font-weight: 900;
+		margin-bottom: 15px;
+	}
+	p {
+		font-size: 18px;
+		margin-bottom: 25px;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.forget_password_form {
+		.form_item {
+			margin-bottom: 10px;
+			input {
+				border-color: #f4f4f4;
+				background-color: #f4f4f4;
+			}
+		}
+		.btn {
+			width: 100%;
+			display: block;
+			margin-bottom: 40px;
+		}
+		span {
+			color: #232323;
+			line-height: 1;
+			display: block;
+			font-size: 16px;
+			font-weight: 700;
+			text-align: center;
+			text-transform: uppercase;
+			a {
+				color: $default_orange;
+			}
+		}
+	}
+}
+/* forget password section - end */
+
+/* register pages - end
+================================================== */

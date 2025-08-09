@@ -1,0 +1,61 @@
+/* video - start
+================================================== */
+.fashion_video_section {
+	.title_text {
+		line-height: 1;
+		color: #252525;
+		font-size: 84px;
+		margin-bottom: 0;
+		font-weight: 400;
+		font-family: 'Anton', sans-serif;
+	}
+}
+
+.fashion_video_item {
+	overflow: hidden;
+	margin-top: 45px;
+	position: relative;
+	background-color: #000000;
+	img {
+		opacity: .35;
+		transition: $default_transition;
+	}
+	&:hover {
+		img {
+			transform: scale(1.08);
+		}
+	}
+	.video_btn1 {
+		top: 50%;
+		left: 50%;
+		z-index: 1;
+		width: 135px;
+		height: 135px;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		border: 2px solid rgba(255, 255, 255, 0.4);
+		span {
+			width: 100px;
+			height: 100px;
+			color: #ffffff;
+			font-size: 20px;
+			background-color: $default_orange;
+		}
+	}
+}
+
+.fashion_video_carousel {
+	.carousel_nav {
+		button {
+			border-radius: 100%;
+			&:nth-child(1) {
+				left: -112px;
+			}
+			&:nth-child(2) {
+				right: -112px;
+			}
+		}
+	}
+}
+/* video - end
+================================================== */

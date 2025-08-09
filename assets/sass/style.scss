@@ -1,0 +1,78 @@
+/* table of content - start
+================================================== */
+/* 
+* Project Name   :  Ventro - Ecommerce Template
+* File           :  CSS Base
+* Version        :  1.0.0
+* Last change    :  06 June 2021
+* Author         :  JThemes (https://themeforest.net/user/jthemes)
+* Developer			 :	jThemes
+*/
+/* table of content - end
+================================================== */
+
+// template global settings
+@import 'variable';
+@import 'fonts';
+@import 'mixin';
+@import 'reset';
+
+// template elements
+@import 'elements/backtotop';
+@import 'elements/color';
+@import 'elements/space';
+@import 'elements/button';
+@import 'elements/list';
+@import 'elements/title';
+@import 'elements/carousel';
+// @import 'elements/preloader';
+@import 'elements/form';
+@import 'elements/social';
+@import 'elements/rating';
+@import 'elements/pagination';
+@import 'elements/tab';
+// @import 'elements/tags';
+@import 'elements/parallax';
+@import 'elements/meta';
+@import 'elements/comment';
+@import 'elements/countdown';
+
+// template components
+@import 'components/header';
+@import 'components/footer';
+@import 'components/breadcrumb';
+@import 'components/sidebar';
+@import 'components/newsletter';
+@import 'components/slider';
+@import 'components/category';
+@import 'components/deals';
+@import 'components/instagram';
+@import 'components/banner';
+@import 'components/policy';
+@import 'components/feature';
+@import 'components/brand';
+@import 'components/about';
+@import 'components/testimonial';
+@import 'components/shop';
+@import 'components/blog';
+@import 'components/details';
+@import 'components/video';
+@import 'components/lookbook';
+@import 'components/onelook';
+@import 'components/cart';
+// @import 'components/checkout';
+@import 'components/faq';
+@import 'components/contact';
+@import 'components/error';
+@import 'components/account';
+@import 'components/vendor';
+@import 'components/dashboard';
+@import 'components/comingsoon';
+@import 'components/compare';
+@import 'components/order';
+@import 'components/funfact';
+@import 'components/thankyou';
+@import 'components/register';
+
+// template responsive111
+@import 'responsive';
