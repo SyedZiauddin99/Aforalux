@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminMaster.master.cs" Inherits="aforalux.Admin.adminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link rel="shortcut icon" href="/assets/images/logo/favourite_icon_1.png">
+
+    <!-- fraimwork - css include -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+
+    <!-- icon font - css include -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome.css">
+
+    <!-- animation - css include -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/animate.css">
+
+    <!-- carousel - css include -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/slick-theme.css">
+
+    <!-- popup - css include -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/magnific-popup.css">
+
+    <!-- jquery-ui - css include -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/jquery-ui.css">
+
+    <!-- select option - css include -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/nice-select.css">
+
+    <!-- custom - css include -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+    <!-- custom - mycss include -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/myStyle.css">
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server" ID="srcmanger"></asp:ScriptManager>
+        <div>
+            <header class="header_section header_6">
+              <div class="container-fluid">
+                  <div class="row align-items-center">
+                      
+
+                      <div class="col col-lg-3 col-5">
+                          <div class="brand_logo text-center">
+                              <a class="brand_link" href="/Default.aspx">
+                                  <img src="/assets/images/logo/logo1_1x.png" srcset="/assets/images/logo/logo1_2x.png 2x" alt="logo_not_found">
+                              </a>
+                          </div>
+                      </div>
+
+                      <div class="col col-lg-5">
+                          
+                      </div>
+
+                      <div class="col col-lg-4 col-7">
+                          <ul class="header_icons_list ul_li">
+                              <li>Welcome <asp:Label runat="server" CssClass="me-2 ms-2" ID="lbladminname"></asp:Label></li>
+                              <li>
+                                 <asp:LinkButton runat="server" ID="adminlogout" CssClass="btn btn-link text-black" OnClick="adminlogout_Click"><i class="fas fa-user"></i> <asp:Label CssClass="me-2 ms-2" runat="server" ID="lblloginout"></asp:Label></asp:LinkButton> 
+                              </li>
+
+                            
+                              
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- collapse search - start -->
+              <div class="main_search_collapse collapse" id="main_search_collapse">
+                  <div class="main_search_form card">
+                      <div class="container width_tablet">
+                          <form action="#">
+                              <div class="form_item">
+                                  <input type="search" name="search" placeholder="Search here...">
+                                  <button type="submit" class="submit_btn"><i class="fal fa-search"></i></button>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+              <!-- collapse search - end -->
+          </header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
